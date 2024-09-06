@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/562923bc0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/michnik hub.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">Certification</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/certificate/Bomiart certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera UX certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera Meta Front-End Developer Certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/EDSA certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/meta-front-end-developer-certificate.png">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/google-ux-design-professional-certificate.2.png">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera Advanced React Certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera coding interview preparation certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera course 1 certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera course 2 certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera course 3 certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera course 4 certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera course 5 certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera course 6 certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera course 7 certificate.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera Front-end Developer Capstone certificate_page-0001 (1).jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera get started with git certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera HTML & CSS in depth Certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera intro to web delopment certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Version Control Cousera Certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Coursera React Basics certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Introduction to Cloud Computing_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Introduction to Front-End Development_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Programming with javascript_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Javascript for Beginners Certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/ReactJS for Beginners Certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Pirple certificate.jpg">  
+                </div>
+                <div class="work">
+                    <img src="images/certificate/Adeyeye Oluwatobi Michael_certificate_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/certificate (1)_page-0001.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/certificate/web-development-with-html-css-javascript-essentials.png">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ by Oluwatobi. Made with <i class="fa-solid fa-heart"></i> by Oluwatobi Adeyeye M.</p>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        
+        function opentab(tabname) {
+            for (tablink of tablinks){
+                tablink.classList.remove ("active-link")
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove ("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add ("active-tab")
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby7e9tkFjxQJ-C7XXVISnIGs4PjIDcOjuD3AfhUvnxwy-UHAICeSkocM8KcefNaBGC3/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
